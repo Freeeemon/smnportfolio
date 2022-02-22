@@ -846,6 +846,10 @@ li {
   /* MOBILE */
   @media screen and (max-width: 576px) {
 
+    #invertedcursor {
+        display: none;
+    }
+
       .section-header {
         gap: 2em;
       }
