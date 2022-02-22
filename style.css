@@ -1,0 +1,974 @@
+@font-face {
+  font-family: "MonumentExtendedRegular";
+  src: url("fonts/MonumentExtended-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "MonumentExtendedUltrabold";
+  src: url("fonts/MonumentExtended-Ultrabold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Swis721BT";
+  src: url("fonts/Swis721_Cn_BT_Roman.woff2") format("woff2");
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
+}
+
+#invertedcursor {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border-radius: 50%;
+  top: var(--y, 0);
+  left: var(--x, 0);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 0;
+  mix-blend-mode: difference;
+  -webkit-transition: -webkit-transform .2s;
+  transition: -webkit-transform .2s;
+  transition: transform .2s;
+  transition: transform .2s, -webkit-transform .2s;
+}
+
+* {
+  color: #4148FF;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  display: block;
+  font-size: 1em;
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+  font-weight: normal;
+}
+
+p {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+}
+
+ul {
+  -webkit-margin-before: 0;
+          margin-block-start: 0;
+  -webkit-margin-after: 0;
+          margin-block-end: 0;
+  -webkit-padding-start: 0;
+          padding-inline-start: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/************************************* HOME ***************************************/
+.section-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0px 25px 0px;
+  margin-top: -10em;
+  gap: 3em;
+  position: fixed;
+  mix-blend-mode: difference;
+}
+
+.section-header .simondousset h1 {
+  font-family: 'Swis721BT';
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.section-header .about a {
+  font-family: 'Swis721BT';
+  font-size: 1.3rem;
+  color: #fff;
+}
+
+.section-header .simondousset h1:hover {
+  -webkit-text-decoration: underline #003cff;
+          text-decoration: underline #003cff;
+}
+
+.section-header .portfolio22:hover {
+  -webkit-text-decoration: underline #003cff;
+          text-decoration: underline #003cff;
+}
+
+.section-header .about a:hover {
+  -webkit-text-decoration: underline #003cff;
+          text-decoration: underline #003cff;
+}
+
+.section-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  margin: 222px 26px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-title .explicationme {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-title .explicationme .frontend h2 {
+  color: #003cff;
+  font-size: 6rem;
+  font-family: 'MonumentExtendedUltrabold';
+  background-image: url(img/fonddesign.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.section-title .explicationme .title {
+  font-family: 'MonumentExtendedUltrabold';
+  color: #fff;
+  font-size: 6rem;
+}
+
+.section-title .inlineblock {
+  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 6em;
+}
+
+.section-title .inlineblock .cube {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -webkit-transform: rotateX(-30deg);
+          transform: rotateX(-30deg);
+  -webkit-animation: animate 4s linear infinite;
+          animation: animate 4s linear infinite;
+}
+
+.section-title .inlineblock .cube div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+
+.section-title .inlineblock .cube div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#003cff));
+  background: linear-gradient(#000, #003cff);
+  -webkit-transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+          transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+}
+
+@-webkit-keyframes animate {
+  0% {
+    -webkit-transform: rotateX(-30deg);
+            transform: rotateX(-30deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-30deg) rotateY(360deg);
+            transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    -webkit-transform: rotateX(-30deg);
+            transform: rotateX(-30deg);
+  }
+  100% {
+    -webkit-transform: rotateX(-30deg) rotateY(360deg);
+            transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+.section-welcome {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 80px 26px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.section-welcome .sentence {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.section-welcome .sentence .inlineblock {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10.5em;
+}
+
+.section-welcome .sentence .inlineblock .design {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.section-welcome .sentence .inlineblock h2 {
+  color: #003cff;
+  font-family: 'MonumentExtendedUltrabold';
+  font-size: 7rem;
+  background-image: url(img/fonddesign.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.section-welcome .sentence .inlineblock li {
+  font-family: 'Swis721BT';
+  color: #fff;
+  font-size: 2rem;
+  list-style: none;
+}
+
+.section-project1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 200px 26px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-project1 .imgveuveambal {
+  text-align: center;
+}
+
+.section-project1 .imgveuveambal img {
+  width: 50%;
+}
+
+.section-project1 .titleveuveambal {
+  margin-top: 4em;
+  mix-blend-mode: difference;
+  position: absolute;
+}
+
+.section-project1 .titleveuveambal h3 {
+  margin-top: 0.5em;
+  color: #003cff;
+  font-size: 8rem;
+  font-family: 'MonumentExtendedUltrabold';
+  display: block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(50%, #fff), color-stop(0, #003cff));
+  background-image: linear-gradient(90deg, #fff, #fff 50%, #003cff 0);
+  background-size: 200% 100%;
+  background-position: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+}
+
+.section-project1 .titleveuveambal h3:hover {
+  background-position: 100%;
+}
+
+.section-project2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 175px 26px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-project2 .imgpopsorgho {
+  pointer-events: none;
+}
+
+.section-project2 .titlepopsorgho {
+  margin-top: 4em;
+  mix-blend-mode: difference;
+  position: absolute;
+}
+
+.section-project2 .titlepopsorgho h3 {
+  margin-top: 0.5em;
+  color: #003cff;
+  font-size: 8rem;
+  font-family: 'MonumentExtendedUltrabold';
+  display: block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(50%, #fff), color-stop(0, #003cff));
+  background-image: linear-gradient(90deg, #fff, #fff 50%, #003cff 0);
+  background-size: 200% 100%;
+  background-position: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+}
+
+.section-project2 .titlepopsorgho h3:hover {
+  background-position: 100%;
+}
+
+.section-project3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 175px 26px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-project3 .imgtorikara {
+  pointer-events: none;
+}
+
+.section-project3 .titletorikara {
+  margin-top: 4em;
+  mix-blend-mode: difference;
+  position: absolute;
+}
+
+.section-project3 .titletorikara h3 {
+  margin-top: 0.5em;
+  color: #003cff;
+  font-size: 8rem;
+  font-family: 'MonumentExtendedUltrabold';
+  display: block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(50%, #fff), color-stop(0, #003cff));
+  background-image: linear-gradient(90deg, #fff, #fff 50%, #003cff 0);
+  background-size: 200% 100%;
+  background-position: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+}
+
+.section-project3 .titletorikara h3:hover {
+  background-position: 100%;
+}
+
+.section-project4 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 175px 26px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-project4 .imgmarketing {
+  text-align: center;
+}
+
+.section-project4 .imgmarketing img {
+  pointer-events: none;
+  width: 67%;
+}
+
+.section-project4 .titlemarketing {
+  margin-top: 4em;
+  mix-blend-mode: difference;
+  position: absolute;
+}
+
+.section-project4 .titlemarketing h3 {
+  margin-top: 1em;
+  color: #003cff;
+  font-size: 8rem;
+  font-family: 'MonumentExtendedUltrabold';
+  display: block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(50%, #fff), color-stop(0, #003cff));
+  background-image: linear-gradient(90deg, #fff, #fff 50%, #003cff 0);
+  background-size: 200% 100%;
+  background-position: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+}
+
+.section-project4 .titlemarketing h3:hover {
+  background-position: 100%;
+}
+
+.section-project5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 200px 26px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-project5 .imgresults {
+  text-align: center;
+}
+
+.section-project5 .imgresults img {
+  width: 50%;
+}
+
+.section-project5 .titleresults {
+  margin-top: 4em;
+  mix-blend-mode: difference;
+  position: absolute;
+}
+
+.section-project5 .titleresults h3 {
+  margin-top: 0.5em;
+  color: #003cff;
+  font-size: 8rem;
+  font-family: 'MonumentExtendedUltrabold';
+  display: block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(50%, #fff), color-stop(0, #003cff));
+  background-image: linear-gradient(90deg, #fff, #fff 50%, #003cff 0);
+  background-size: 200% 100%;
+  background-position: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+}
+
+.section-project5 .titleresults h3:hover {
+  background-position: 100%;
+}
+
+/************************************* PROJETS ***************************************/
+.presentation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 200px 26px 0px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.presentation .title1project h2 {
+  color: #003cff;
+  font-size: 6rem;
+  font-family: 'MonumentExtendedUltrabold';
+}
+
+.presentation .img1projet {
+  text-align: center;
+  margin-top: 7em;
+}
+
+.presentation .img1projet img {
+  width: 50%;
+}
+
+.presentation .img1projet video {
+  pointer-events: none;
+}
+
+.presentation .explication1 {
+  margin-top: 5em;
+}
+
+.presentation .explication1 p {
+  font-family: 'Swis721BT';
+  color: #fff;
+  font-size: 2rem;
+}
+
+.presentation .title2project h2 {
+  margin-top: 3em;
+  color: #003cff;
+  font-size: 3rem;
+  font-family: 'MonumentExtendedUltrabold';
+}
+
+.presentation .explication2 {
+  margin-top: 2em;
+}
+
+.presentation .explication2 p {
+  font-family: 'Swis721BT';
+  color: #fff;
+  font-size: 2rem;
+}
+
+.presentation .img2 {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.presentation .img2 img {
+  width: 50%;
+}
+
+.presentation .img2 video {
+  pointer-events: none;
+}
+
+.presentation .title3project h2 {
+  margin-top: 3em;
+  color: #003cff;
+  font-size: 3rem;
+  font-family: 'MonumentExtendedUltrabold';
+}
+
+.presentation .explication3 {
+  margin-top: 2em;
+}
+
+.presentation .explication3 p {
+  font-family: 'Swis721BT';
+  color: #fff;
+  font-size: 2rem;
+}
+
+.presentation .title4project h2 {
+  margin-top: 3em;
+  color: #003cff;
+  font-size: 3rem;
+  font-family: 'MonumentExtendedUltrabold';
+}
+
+.presentation .explication4 {
+  margin-top: 2em;
+}
+
+.presentation .explication4 p {
+  font-family: 'Swis721BT';
+  color: #fff;
+  font-size: 2rem;
+}
+
+.presentation .img3 {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.presentation .img3 img {
+  width: 50%;
+}
+
+.presentation .title5project h2 {
+  margin-top: 3em;
+  color: #003cff;
+  font-size: 3rem;
+  font-family: 'MonumentExtendedUltrabold';
+}
+
+.presentation .img4 {
+  text-align: center;
+  margin-top: 1.5em;
+}
+
+.presentation .img4 video {
+  pointer-events: none;
+}
+
+.presentation .img5 {
+  text-align: center;
+  pointer-events: none;
+  margin-top: 5.5em;
+}
+
+/************************************* ABOUT ***************************************/
+.section-simondousset {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 200px 26px 0px;
+}
+
+.section-simondousset .scrollingtext h2 {
+  color: #fff;
+  font-size: 3rem;
+  font-family: 'MonumentExtendedUltrabold';
+}
+
+.section-simondousset .scroller {
+  height: 2.2em;
+  line-height: 1.2em;
+  position: relative;
+  overflow: hidden;
+  width: 9em;
+  display: inline-block;
+}
+
+.section-simondousset .scroller > span {
+  position: absolute;
+  top: 0;
+  -webkit-animation: slide 5s infinite;
+          animation: slide 5s infinite;
+  color: #fff;
+  font-size: 3rem;
+  background-image: url(img/fonddesign.jpg);
+  background-attachment: fixed;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@-webkit-keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
+}
+
+@keyframes slide {
+  0% {
+    top: 0;
+  }
+  25% {
+    top: -1.2em;
+  }
+  50% {
+    top: -2.4em;
+  }
+  75% {
+    top: -3.6em;
+  }
+}
+
+.section-me {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 125px 26px 0px;
+}
+
+.section-me .text1 p {
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'MonumentExtendedUltrabold';
+}
+
+.section-me .text2 {
+  margin-top: 2em;
+}
+
+.section-me .text2 p {
+  color: #fff;
+  font-size: 2rem;
+  font-family: 'MonumentExtendedUltrabold';
+}
+
+.section-me span {
+  color: #003cff;
+}
+
+/************************************* FOOTER ***************************************/
+.section-footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 200px 26px 0px;
+}
+
+.section-footer .mailadresse {
+  z-index: 2;
+}
+
+.section-footer .mailadresse a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Swis721BT';
+}
+
+.section-footer .linkedin {
+  z-index: 2;
+}
+
+.section-footer .linkedin a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Swis721BT';
+}
+
+.section-footer .instagram {
+  z-index: 2;
+}
+
+.section-footer .instagram a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Swis721BT';
+}
+
+.section-footer .behance {
+  z-index: 2;
+  margin-bottom: 2em;
+}
+
+.section-footer .behance a {
+  color: #fff;
+  font-size: 1.2rem;
+  font-family: 'Swis721BT';
+}
+
+.section-footer .instagram a:hover {
+  -webkit-text-decoration: underline #003cff;
+          text-decoration: underline #003cff;
+}
+
+.section-footer .mailadresse a:hover {
+  -webkit-text-decoration: underline #003cff;
+          text-decoration: underline #003cff;
+}
+
+.section-footer .linkedin a:hover {
+  -webkit-text-decoration: underline #003cff;
+          text-decoration: underline #003cff;
+}
+
+.section-footer .behance a:hover {
+  -webkit-text-decoration: underline #003cff;
+          text-decoration: underline #003cff;
+}
+
+/************************************* RESPONSIVE ***************************************/
+/* MOBILE */
+@media screen and (max-width: 576px) {
+  .section-header {
+    gap: 2em;
+  }
+  .cube {
+    display: none;
+  }
+  .section-title .explicationme .frontend h2 {
+    font-size: 4rem;
+  }
+  .section-title .explicationme .title {
+    font-size: 2.7rem;
+  }
+  .section-welcome .sentence .inlineblock li {
+    font-size: 1.5em;
+  }
+  .section-welcome p {
+    font-size: 1.5rem;
+  }
+  .design {
+    display: none;
+  }
+  .section-project1 .imgveuveambal img {
+    width: 103%;
+  }
+  .section-project1 .titleveuveambal h3 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .imgpopsorgho video {
+    width: 380px;
+  }
+  .section-project2 .titlepopsorgho h3 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  .imgtorikara video {
+    width: 380px;
+  }
+  .section-project3 .titletorikara h3 {
+    font-size: 3.5em;
+    text-align: center;
+  }
+  .section-project4 .titlemarketing h3 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .section-project5 .imgresults img {
+    width: 103%;
+  }
+  .section-project5 .titleresults h3 {
+    text-align: center;
+    font-size: 4rem;
+  }
+  /************************************* PROJET 1 ***************************************/
+  .presentation .title1project h2 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .presentation .title2project h2 {
+    font-size: 2rem;
+  }
+  .presentation .title3project h2 {
+    font-size: 2rem;
+  }
+  .presentation .title4project h2 {
+    font-size: 2rem;
+  }
+  .presentation .title5project h2 {
+    font-size: 2rem;
+  }
+  .presentation .img1projet img {
+    width: 100%;
+  }
+  .presentation .img2 {
+    text-align: center;
+  }
+  .presentation .img2 img {
+    width: 100%;
+  }
+  .presentation .img3 {
+    text-align: center;
+  }
+  .presentation .img3 img {
+    width: 100%;
+  }
+  .presentation .img4 {
+    text-align: center;
+  }
+  .presentation .img4 video {
+    width: 100%;
+  }
+  .presentation .explication1 p {
+    font-size: 1.5rem;
+  }
+  .presentation .explication2 p {
+    font-size: 1.5rem;
+  }
+  .presentation .explication3 p {
+    font-size: 1.5rem;
+  }
+  .presentation .explication4 p {
+    font-size: 1.5rem;
+  }
+  /************************************* PROJET 2 ***************************************/
+  .presentation .img1projet video {
+    pointer-events: none;
+    width: 100%;
+  }
+  .presentation .img2 video {
+    pointer-events: none;
+    width: 100%;
+  }
+  /************************************* PROJET 3 ***************************************/
+  .img4 img {
+    width: 100%;
+  }
+  .img5 video {
+    width: 100%;
+  }
+  .section-simondousset .scroller {
+    width: 7em;
+  }
+  .section-footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1820px) {
+  .section-title .inlineblock {
+    gap: 14em;
+  }
+  .section-welcome .sentence .inlineblock {
+    gap: 20.5em;
+  }
+}
+/*# sourceMappingURL=style.css.map */
