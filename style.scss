@@ -186,6 +186,10 @@ li {
           height: 100%;
           background: linear-gradient(#000,#003cff);
           transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+          -ms-transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+          -webkit-transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+          -moz-transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+          -o-transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
         }
       }
     }
@@ -194,10 +198,18 @@ li {
 
       0% {
         transform: rotateX(-30deg);
+        -ms-transform: rotateX(-30deg);
+        -webkit-transform: rotateX(-30deg);
+        -moz-transform: rotateX(-30deg);
+        -o-transform: rotateX(-30deg);
       }
 
       100% {
         transform: rotateX(-30deg) rotateY(360deg);
+        -ms-transform: rotateX(-30deg) rotateY(360deg);
+        -webkit-transform: rotateX(-30deg) rotateY(360deg);
+        -moz-transform: rotateX(-30deg) rotateY(360deg);
+        -o-transform: rotateX(-30deg) rotateY(360deg);
       }
       
     }
