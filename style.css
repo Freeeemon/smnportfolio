@@ -203,44 +203,29 @@ li {
   height: 100%;
   background: -webkit-gradient(linear, left top, left bottom, from(#000), to(#003cff));
   background: linear-gradient(#000, #003cff);
-  transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
-  -ms-transform: -ms-rotateY(calc(90deg * var(--i))) -ms-translateZ(150px);
-  -webkit-transform: -webkit-rotateY(calc(90deg * var(--i))) -webkit-translateZ(150px);
-  -moz-transform: -moz-rotateY(calc(90deg * var(--i))) -moz-translateZ(150px);
-  -o-transform: -o-rotateY(calc(90deg * var(--i))) -o-translateZ(150px);
+  -webkit-transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
+          transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
 }
 
 @-webkit-keyframes animate {
   0% {
-    transform: rotateX(-30deg);
-    -ms-transform: -ms-rotateX(-30deg);
-    -webkit-transform: -webkit-rotateX(-30deg);
-    -moz-transform: -moz-rotateX(-30deg);
-    -o-transform: -o-rotateX(-30deg);
+    -webkit-transform: rotateX(-30deg);
+            transform: rotateX(-30deg);
   }
   100% {
-    transform: rotateX(-30deg) rotateY(360deg);
-    -ms-transform: -ms-rotateX(-30deg) -ms-rotateY(360deg);
-    -webkit-transform: -webkit-rotateX(-30deg) -webkit-rotateY(360deg);
-    -moz-transform: -moz-rotateX(-30deg) -moz-rotateY(360deg);
-    -o-transform: -o-rotateX(-30deg) -o-rotateY(360deg);
+    -webkit-transform: rotateX(-30deg) rotateY(360deg);
+            transform: rotateX(-30deg) rotateY(360deg);
   }
 }
 
 @keyframes animate {
   0% {
-    transform: rotateX(-30deg);
-    -ms-transform: -ms-rotateX(-30deg);
-    -webkit-transform: -webkit-rotateX(-30deg);
-    -moz-transform: -moz-rotateX(-30deg);
-    -o-transform: -o-rotateX(-30deg);
+    -webkit-transform: rotateX(-30deg);
+            transform: rotateX(-30deg);
   }
   100% {
-    transform: rotateX(-30deg) rotateY(360deg);
-    -ms-transform: -ms-rotateX(-30deg) -ms-rotateY(360deg);
-    -webkit-transform: -webkit-rotateX(-30deg) -webkit-rotateY(360deg);
-    -moz-transform: -moz-rotateX(-30deg) -moz-rotateY(360deg);
-    -o-transform: -o-rotateX(-30deg) -o-rotateY(360deg);
+    -webkit-transform: rotateX(-30deg) rotateY(360deg);
+            transform: rotateX(-30deg) rotateY(360deg);
   }
 }
 
