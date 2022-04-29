@@ -1,29 +1,25 @@
 @font-face {
-    font-family: "MonumentExtendedRegular";
-    src: url("fonts/MonumentExtended-Regular.woff2") format("woff2"),
-   }
+  font-family: "MonumentExtendedRegular";
+  src: url("fonts/MonumentExtended-Regular.woff2") format("woff2");
+}
 
 @font-face {
-    font-family: "MonumentExtendedUltrabold";
-    src: url("fonts/MonumentExtended-Ultrabold.woff2") format("woff2"),
-   }
+  font-family: "MonumentExtendedUltrabold";
+  src: url("fonts/MonumentExtended-Ultrabold.woff2") format("woff2");
+}
 
-   @font-face {
-    font-family: "Swis721BT";
-    src: url("fonts/Swis721_Cn_BT_Roman.woff2") format("woff2"),
-   }
+@font-face {
+  font-family: "Swis721BT";
+  src: url("fonts/Swis721_Cn_BT_Roman.woff2") format("woff2");
+}
 
-
-
-
-
-
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100vh;
-    background: #000;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: #000;
 }
 
 #invertedcursor {
@@ -37,25 +33,27 @@ html, body {
   transform: translate(-50%, -50%);
   z-index: 0;
   mix-blend-mode: difference;
-  transition: transform .2s;
+  transition: transform 0.2s;
 }
 
 * {
-  color: #4148FF;
+  color: #4148ff;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
-h1, h2, h3 {
-    display: block;
-    font-size: 1em;
-    margin-block-start: 0;
-    margin-block-end: 0;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    font-weight: normal;
+h1,
+h2,
+h3 {
+  display: block;
+  font-size: 1em;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: normal;
 }
 
 p {
@@ -73,61 +71,41 @@ li {
   list-style: none;
 }
 
-
-
-
-  /************************************* HOME ***************************************/
-
-
-
-
+/************************************* HOME ***************************************/
 
 .section-header {
-    display: flex;
-    justify-content: space-around;
-    margin: 0px 25px 0px;
-    margin-top: -10em;
-    gap: 3em;
-    position: fixed;
-    mix-blend-mode: difference;
+  display: flex;
+  justify-content: space-around;
+  margin: 0px 25px 0px;
+  margin-top: -10em;
+  gap: 3em;
+  position: fixed;
+  mix-blend-mode: difference;
 
-    .simondousset h1 {
-      font-family: 'Swis721BT';
-      font-size: 1.3rem;
-      color: #fff;
-    }
+  .simondousset h1 {
+    font-family: "Swis721BT";
+    font-size: 1.3rem;
+    color: #fff;
+  }
 
-    .about a {
-      font-family: 'Swis721BT';
-      font-size: 1.3rem;
-      color: #fff;
-    }
+  .about a {
+    font-family: "Swis721BT";
+    font-size: 1.3rem;
+    color: #fff;
+  }
 
-    .simondousset h1:hover {
-      text-decoration: underline #003cff;
-    }
+  .simondousset h1:hover {
+    text-decoration: underline #003cff;
+  }
 
-    .portfolio22:hover {
-      text-decoration: underline #003cff;
-    }
+  .portfolio22:hover {
+    text-decoration: underline #003cff;
+  }
 
-    .about a:hover {
-      text-decoration: underline #003cff;
-    }
+  .about a:hover {
+    text-decoration: underline #003cff;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .section-title {
   display: flex;
@@ -142,7 +120,7 @@ li {
     .frontend h2 {
       color: #003cff;
       font-size: 6rem;
-      font-family: 'MonumentExtendedUltrabold';
+      font-family: "MonumentExtendedUltrabold";
       background-image: url(img/fonddesign.jpg);
       background-attachment: fixed;
       -webkit-text-fill-color: transparent;
@@ -150,9 +128,9 @@ li {
     }
 
     .title {
-        font-family: 'MonumentExtendedUltrabold';
-        color: #fff;
-        font-size: 6rem;
+      font-family: "MonumentExtendedUltrabold";
+      color: #fff;
+      font-size: 6rem;
     }
   }
 
@@ -184,14 +162,13 @@ li {
           left: 0;
           width: 100%;
           height: 100%;
-          background: linear-gradient(#000,#003cff);
+          background: linear-gradient(#000, #003cff);
           transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
         }
       }
     }
 
     @keyframes animate {
-
       0% {
         transform: rotateX(-30deg);
       }
@@ -199,14 +176,9 @@ li {
       100% {
         transform: rotateX(-30deg) rotateY(360deg);
       }
-      
     }
   }
 }
-
-
-
-
 
 .section-welcome {
   display: flex;
@@ -225,30 +197,26 @@ li {
       .design {
         align-self: center;
       }
-      
-        h2 {
-          color: #003cff;
-          font-family: 'MonumentExtendedUltrabold';
-          font-size: 7rem;
-          background-image: url(img/fonddesign.jpg);
-          background-attachment: fixed;
-          -webkit-text-fill-color: transparent;
-          -webkit-background-clip: text;
-        }
+
+      h2 {
+        color: #003cff;
+        font-family: "MonumentExtendedUltrabold";
+        font-size: 7rem;
+        background-image: url(img/fonddesign.jpg);
+        background-attachment: fixed;
+        -webkit-text-fill-color: transparent;
+        -webkit-background-clip: text;
+      }
 
       li {
-        font-family: 'Swis721BT';
+        font-family: "Swis721BT";
         color: #fff;
         font-size: 2rem;
         list-style: none;
       }
     }
-  } 
+  }
 }
-
-
-
-
 
 .section-project1 {
   display: flex;
@@ -257,210 +225,228 @@ li {
   align-items: center;
 
   .imgveuveambal {
-      text-align: center;
+    text-align: center;
   }
 
-    .imgveuveambal img {
-      width: 50%;
-    }
+  .imgveuveambal img {
+    width: 50%;
+  }
 
-    .titleveuveambal {
-      margin-top: 4em;
-      mix-blend-mode: difference;
-      position: absolute;
-    }
+  .titleveuveambal {
+    margin-top: 4em;
+    mix-blend-mode: difference;
+    position: absolute;
+  }
 
-
-
-    .titleveuveambal h3 {
-      margin-top: 0.5em;
-      color: #003cff;
-      font-size: 8rem;
-      font-family: 'MonumentExtendedUltrabold';
-      display : block;
-      color: transparent;
-      -webkit-background-clip: text;
-      background-image: linear-gradient(90deg,#fff,#fff 50%,#003cff 0);
-      background-size: 200% 100%;
-      background-position: 0;
-      transition: all .3s cubic-bezier(0,0,.23,1);
+  .titleveuveambal h3 {
+    margin-top: 0.5em;
+    color: #003cff;
+    font-size: 8rem;
+    font-family: "MonumentExtendedUltrabold";
+    display: block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #fff, #fff 50%, #003cff 0);
+    background-size: 200% 100%;
+    background-position: 0;
+    transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
   }
 
   .titleveuveambal h3:hover {
     background-position: 100%;
-        }
+  }
 }
 
-  .section-project2 {
-    display: flex;
-    margin: 175px 26px 0px;
-    flex-direction: column;
-    align-items: center;
+.section-project2 {
+  display: flex;
+  margin: 175px 26px 0px;
+  flex-direction: column;
+  align-items: center;
 
-      .imgpopsorgho {
-        pointer-events: none;
-      }
+  .imgpopsorgho {
+    pointer-events: none;
+  }
 
-      .titlepopsorgho {
-        margin-top: 4em;
-        mix-blend-mode: difference;
-        position: absolute;
-      }
-  
-      .titlepopsorgho h3 {
-        margin-top: 0.5em;
-        color: #003cff;
-        font-size: 8rem;
-        font-family: 'MonumentExtendedUltrabold';
-        display : block;
-        color: transparent;
-        -webkit-background-clip: text;
-        background-image: linear-gradient(90deg,#fff,#fff 50%,#003cff 0);
-        background-size: 200% 100%;
-        background-position: 0;
-        transition: all .3s cubic-bezier(0,0,.23,1);
-      }
+  .titlepopsorgho {
+    margin-top: 4em;
+    mix-blend-mode: difference;
+    position: absolute;
+  }
 
-      .titlepopsorgho h3:hover {
-        background-position: 100%;
-      }
-    }
+  .titlepopsorgho h3 {
+    margin-top: 0.5em;
+    color: #003cff;
+    font-size: 8rem;
+    font-family: "MonumentExtendedUltrabold";
+    display: block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #fff, #fff 50%, #003cff 0);
+    background-size: 200% 100%;
+    background-position: 0;
+    transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  }
 
-    .section-project3 {
-      display: flex;
-      margin: 175px 26px 0px;
-      flex-direction: column;
-      align-items: center;
-  
-        .imgtorikara {
-          pointer-events: none;
-        }
-  
-        .titletorikara {
-          margin-top: 4em;
-          mix-blend-mode: difference;
-          position: absolute;
-        }
-    
-        .titletorikara h3 {
-          margin-top: 0.5em;
-          color: #003cff;
-          font-size: 8rem;
-          font-family: 'MonumentExtendedUltrabold';
-          display : block;
-          color: transparent;
-          -webkit-background-clip: text;
-          background-image: linear-gradient(90deg,#fff,#fff 50%,#003cff 0);
-          background-size: 200% 100%;
-          background-position: 0;
-          transition: all .3s cubic-bezier(0,0,.23,1);
-        }
+  .titlepopsorgho h3:hover {
+    background-position: 100%;
+  }
+}
 
-        .titletorikara h3:hover {
-          background-position: 100%;
-        }
-      }
+.section-project3 {
+  display: flex;
+  margin: 175px 26px 0px;
+  flex-direction: column;
+  align-items: center;
 
-      .section-project4 {
-        display: flex;
-        margin: 175px 26px 0px;
-        flex-direction: column;
-        align-items: center;
+  .imgtorikara {
+    pointer-events: none;
+  }
 
-          .imgmarketing {
-            text-align: center;
-          } 
-    
-          .imgmarketing img {
-            pointer-events: none;
-            width: 67%;
-          }
-    
-          .titlemarketing {
-            margin-top: 4em;
-            mix-blend-mode: difference;
-            position: absolute;
-          }
-      
-          .titlemarketing h3 {
-            margin-top: 1em;
-            color: #003cff;
-            font-size: 8rem;
-            font-family: 'MonumentExtendedUltrabold';
-            display : block;
-            color: transparent;
-            -webkit-background-clip: text;
-            background-image: linear-gradient(90deg,#fff,#fff 50%,#003cff 0);
-            background-size: 200% 100%;
-            background-position: 0;
-            transition: all .3s cubic-bezier(0,0,.23,1);
-          }
+  .titletorikara {
+    margin-top: 4em;
+    mix-blend-mode: difference;
+    position: absolute;
+  }
 
-          .titlemarketing h3:hover {
-            background-position: 100%;
-          }
-        }
-    
+  .titletorikara h3 {
+    margin-top: 0.5em;
+    color: #003cff;
+    font-size: 8rem;
+    font-family: "MonumentExtendedUltrabold";
+    display: block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #fff, #fff 50%, #003cff 0);
+    background-size: 200% 100%;
+    background-position: 0;
+    transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  }
 
-        .section-project5 {
-          display: flex;
-          margin: 200px 26px 0px;
-          flex-direction: column;
-          align-items: center;
-        
-            .imgresults {
-              text-align: center;
-            }
-        
-            .imgresults img {
-              width: 50%;
-            }
-        
-            .titleresults {
-              margin-top: 4em;
-              mix-blend-mode: difference;
-              position: absolute;
-            }
-        
-        
-        
-            .titleresults h3 {
-              margin-top: 0.5em;
-              color: #003cff;
-              font-size: 8rem;
-              font-family: 'MonumentExtendedUltrabold';
-              display : block;
-              color: transparent;
-              -webkit-background-clip: text;
-              background-image: linear-gradient(90deg,#fff,#fff 50%,#003cff 0);
-              background-size: 200% 100%;
-              background-position: 0;
-              transition: all .3s cubic-bezier(0,0,.23,1);
-          }
-        
-          .titleresults h3:hover {
-            background-position: 100%;
-                }
-        }
+  .titletorikara h3:hover {
+    background-position: 100%;
+  }
+}
 
+.section-project4 {
+  display: flex;
+  margin: 175px 26px 0px;
+  flex-direction: column;
+  align-items: center;
 
+  .imgmarketing {
+    text-align: center;
+  }
 
+  .imgmarketing img {
+    pointer-events: none;
+    width: 67%;
+  }
 
+  .titlemarketing {
+    margin-top: 4em;
+    mix-blend-mode: difference;
+    position: absolute;
+  }
 
+  .titlemarketing h3 {
+    margin-top: 1em;
+    color: #003cff;
+    font-size: 8rem;
+    font-family: "MonumentExtendedUltrabold";
+    display: block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #fff, #fff 50%, #003cff 0);
+    background-size: 200% 100%;
+    background-position: 0;
+    transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  }
 
+  .titlemarketing h3:hover {
+    background-position: 100%;
+  }
+}
 
+.section-project5 {
+  display: flex;
+  margin: 175px 26px 0px;
+  flex-direction: column;
+  align-items: center;
 
+  .imgizidesign {
+    text-align: center;
+  }
 
+  .imgizidesign img {
+    pointer-events: none;
+    width: 60%;
+  }
 
+  .titleizidesign {
+    margin-top: 4em;
+    mix-blend-mode: difference;
+    position: absolute;
+  }
 
-  /************************************* PROJETS ***************************************/
+  .titleizidesign h3 {
+    margin-top: 1em;
+    color: #003cff;
+    font-size: 8rem;
+    font-family: "MonumentExtendedUltrabold";
+    display: block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #fff, #fff 50%, #003cff 0);
+    background-size: 200% 100%;
+    background-position: 0;
+    transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  }
 
+  .titleizidesign h3:hover {
+    background-position: 100%;
+  }
+}
 
+.section-project6 {
+  display: flex;
+  margin: 200px 26px 0px;
+  flex-direction: column;
+  align-items: center;
 
+  .imgresults {
+    text-align: center;
+  }
 
+  .imgresults img {
+    width: 50%;
+  }
 
+  .titleresults {
+    margin-top: 4em;
+    mix-blend-mode: difference;
+    position: absolute;
+  }
 
+  .titleresults h3 {
+    margin-top: 0.5em;
+    color: #003cff;
+    font-size: 8rem;
+    font-family: "MonumentExtendedUltrabold";
+    display: block;
+    color: transparent;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(90deg, #fff, #fff 50%, #003cff 0);
+    background-size: 200% 100%;
+    background-position: 0;
+    transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  }
 
+  .titleresults h3:hover {
+    background-position: 100%;
+  }
+}
+
+/************************************* PROJETS ***************************************/
 
 .presentation {
   display: flex;
@@ -471,12 +457,12 @@ li {
   .title1project h2 {
     color: #003cff;
     font-size: 6rem;
-    font-family: 'MonumentExtendedUltrabold';
+    font-family: "MonumentExtendedUltrabold";
   }
 
   .img1projet {
-      text-align: center;
-      margin-top: 7em;
+    text-align: center;
+    margin-top: 7em;
 
     img {
       width: 50%;
@@ -491,30 +477,28 @@ li {
     margin-top: 5em;
 
     p {
-      font-family: 'Swis721BT';
+      font-family: "Swis721BT";
       color: #fff;
       font-size: 2rem;
     }
   }
-  
-
 
   .title2project h2 {
     margin-top: 3em;
     color: #003cff;
     font-size: 3rem;
-    font-family: 'MonumentExtendedUltrabold';
+    font-family: "MonumentExtendedUltrabold";
   }
 
   .explication2 {
     margin-top: 2em;
 
     p {
-      font-family: 'Swis721BT';
+      font-family: "Swis721BT";
       color: #fff;
       font-size: 2rem;
     }
-  } 
+  }
 
   .img2 {
     text-align: center;
@@ -529,44 +513,39 @@ li {
     }
   }
 
-
-
   .title3project h2 {
     margin-top: 3em;
     color: #003cff;
     font-size: 3rem;
-    font-family: 'MonumentExtendedUltrabold';
+    font-family: "MonumentExtendedUltrabold";
   }
 
   .explication3 {
     margin-top: 2em;
 
     p {
-      font-family: 'Swis721BT';
+      font-family: "Swis721BT";
       color: #fff;
       font-size: 2rem;
     }
-  } 
+  }
 
-
-
-  
   .title4project h2 {
     margin-top: 3em;
     color: #003cff;
     font-size: 3rem;
-    font-family: 'MonumentExtendedUltrabold';
+    font-family: "MonumentExtendedUltrabold";
   }
 
   .explication4 {
     margin-top: 2em;
 
     p {
-      font-family: 'Swis721BT';
+      font-family: "Swis721BT";
       color: #fff;
       font-size: 2rem;
     }
-  } 
+  }
 
   .img3 {
     text-align: center;
@@ -577,14 +556,12 @@ li {
     }
   }
 
-
-
   .title5project h2 {
     margin-top: 3em;
     color: #003cff;
     font-size: 3rem;
-    font-family: 'MonumentExtendedUltrabold';
-  } 
+    font-family: "MonumentExtendedUltrabold";
+  }
 
   .img4 {
     text-align: center;
@@ -602,24 +579,7 @@ li {
   }
 }
 
-
-
-
-
-
-
-
-
-  /************************************* ABOUT ***************************************/
-
-
-
-
-
-
-
-
-
+/************************************* ABOUT ***************************************/
 
 .section-simondousset {
   display: flex;
@@ -629,7 +589,7 @@ li {
   .scrollingtext h2 {
     color: #fff;
     font-size: 3rem;
-    font-family: 'MonumentExtendedUltrabold';
+    font-family: "MonumentExtendedUltrabold";
   }
 
   .scroller {
@@ -649,7 +609,7 @@ li {
     background-image: url(img/fonddesign.jpg);
     background-attachment: fixed;
     -webkit-text-fill-color: transparent;
-    -webkit-background-clip: text; 
+    -webkit-background-clip: text;
   }
   @keyframes slide {
     0% {
@@ -667,7 +627,6 @@ li {
   }
 }
 
-
 .section-me {
   display: flex;
   flex-direction: column;
@@ -676,7 +635,7 @@ li {
   .text1 p {
     color: #fff;
     font-size: 2rem;
-    font-family: 'MonumentExtendedUltrabold';
+    font-family: "MonumentExtendedUltrabold";
   }
 
   .text2 {
@@ -684,7 +643,7 @@ li {
     p {
       color: #fff;
       font-size: 2rem;
-      font-family: 'MonumentExtendedUltrabold';
+      font-family: "MonumentExtendedUltrabold";
     }
   }
 
@@ -693,17 +652,7 @@ li {
   }
 }
 
-
-
-  /************************************* FOOTER ***************************************/
-
-
-
-
-
-
-
-
+/************************************* FOOTER ***************************************/
 
 .section-footer {
   display: flex;
@@ -715,36 +664,36 @@ li {
     a {
       color: #fff;
       font-size: 1.2rem;
-      font-family: 'Swis721BT';
+      font-family: "Swis721BT";
     }
   }
 
   .linkedin {
     z-index: 2;
     a {
-    color: #fff;
-    font-size: 1.2rem;
-    font-family: 'Swis721BT';
-   }
+      color: #fff;
+      font-size: 1.2rem;
+      font-family: "Swis721BT";
+    }
   }
 
   .instagram {
     z-index: 2;
     a {
-    color: #fff;
-    font-size: 1.2rem;
-    font-family: 'Swis721BT';
-   }
+      color: #fff;
+      font-size: 1.2rem;
+      font-family: "Swis721BT";
+    }
   }
 
   .behance {
     z-index: 2;
     margin-bottom: 2em;
     a {
-    color: #fff;
-    font-size: 1.2rem;
-    font-family: 'Swis721BT';
-   }
+      color: #fff;
+      font-size: 1.2rem;
+      font-family: "Swis721BT";
+    }
   }
 
   .instagram a:hover {
@@ -764,286 +713,190 @@ li {
   }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /************************************* RESPONSIVE ***************************************/
-  
-  /* MOBILE */
-  @media screen and (max-width: 576px) {
-
-    #invertedcursor {
-        display: none;
-    }
-
-      .section-header {
-        gap: 2em;
-      }
-
-      .cube {
-        display: none;
-      }
-
-      .section-title .explicationme .frontend h2 {
-        font-size: 4rem;
-      }
-
-      .section-title .explicationme .title {
-        font-size: 2.7rem;
-      }
-
-      .section-welcome .sentence .inlineblock li {
-        font-size: 1.5em;
-      }
-
-      .section-welcome p {
-        font-size: 1.5rem;
-      }
-
-      .design {
-        display: none;
-      }
-
-      .section-project1 .imgveuveambal img {
-        width: 103%;
-      }
-
-      .section-project1 .titleveuveambal h3 {
-        text-align: center;
-        font-size: 4rem;
-      }
-      
-      .imgpopsorgho video {
-        width: 380px;
-      }
-
-      .section-project2 .titlepopsorgho h3 {
-        text-align: center;
-        font-size: 4rem;
-      }
-
-      .imgtorikara video {
-        width: 380px;
-      }
-
-      .section-project3 .titletorikara h3 {
-        font-size: 3.5em;
-        text-align: center;
-      }
-
-      .section-project4 .titlemarketing h3 {
-        text-align: center;
-        font-size: 3.5rem;
-      }
-
-      .section-project5 .imgresults img {
-        width: 103%;
-      }
-
-      .section-project5 .titleresults h3 {
-        text-align: center;
-        font-size: 4rem;
-      }
-
-
-
+/************************************* RESPONSIVE ***************************************/
+
+/* MOBILE */
+@media screen and (max-width: 576px) {
+  #invertedcursor {
+    display: none;
+  }
+
+  .section-header {
+    gap: 2em;
+  }
+
+  .cube {
+    display: none;
+  }
+
+  .section-title .explicationme .frontend h2 {
+    font-size: 4rem;
+  }
+
+  .section-title .explicationme .title {
+    font-size: 2.7rem;
+  }
+
+  .section-welcome .sentence .inlineblock li {
+    font-size: 1.5em;
+  }
+
+  .section-welcome p {
+    font-size: 1.5rem;
+  }
+
+  .design {
+    display: none;
+  }
+
+  .section-project1 .imgveuveambal img {
+    width: 103%;
+  }
+
+  .section-project1 .titleveuveambal h3 {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .imgpopsorgho video {
+    width: 380px;
+  }
+
+  .section-project2 .titlepopsorgho h3 {
+    text-align: center;
+    font-size: 4rem;
+  }
+
+  .imgtorikara video {
+    width: 380px;
+  }
+
+  .section-project3 .titletorikara h3 {
+    font-size: 3.5em;
+    text-align: center;
+  }
+
+  .section-project4 .titlemarketing h3 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+
+  .section-project5 .imgresults img {
+    width: 103%;
+  }
+
+  .section-project5 .titleresults h3 {
+    text-align: center;
+    font-size: 4rem;
+  }
 
   /************************************* PROJET 1 ***************************************/
 
+  .presentation .title1project h2 {
+    text-align: center;
+    font-size: 3.5rem;
+  }
+  .presentation .title2project h2 {
+    font-size: 2rem;
+  }
+  .presentation .title3project h2 {
+    font-size: 2rem;
+  }
+  .presentation .title4project h2 {
+    font-size: 2rem;
+  }
+  .presentation .title5project h2 {
+    font-size: 2rem;
+  }
 
+  .presentation .img1projet img {
+    width: 100%;
+  }
+  .presentation .img2 {
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+  .presentation .img3 {
+    text-align: center;
+    img {
+      width: 100%;
+    }
+  }
+  .presentation .img4 {
+    text-align: center;
+    video {
+      width: 100%;
+    }
+  }
 
-
-
-
-      .presentation .title1project h2 {
-        text-align: center;
-        font-size: 3.5rem;
-      }
-      .presentation .title2project h2 {
-        font-size: 2rem;
-      }
-      .presentation .title3project h2 {
-        font-size: 2rem;
-      }
-      .presentation .title4project h2 {
-        font-size: 2rem;
-      }
-      .presentation .title5project h2 {
-        font-size: 2rem;
-      }
-
-
-      .presentation .img1projet img {
-        width: 100%;
-      }
-      .presentation .img2 {
-        text-align: center;
-          img {
-            width: 100%;
-          }
-      }
-      .presentation .img3 {
-        text-align: center;
-          img {
-            width: 100%;
-          }
-      }
-      .presentation .img4 {
-        text-align: center;
-          video {
-            width: 100%;
-          }
-      }
-      
-
-
-      .presentation .explication1  p {
-        font-size: 1.5rem;
-      }
-      .presentation .explication2  p {
-        font-size: 1.5rem;
-      }
-      .presentation .explication3  p {
-        font-size: 1.5rem;
-      }
-      .presentation .explication4  p {
-        font-size: 1.5rem;
-      }
-
-
-
-
+  .presentation .explication1 p {
+    font-size: 1.5rem;
+  }
+  .presentation .explication2 p {
+    font-size: 1.5rem;
+  }
+  .presentation .explication3 p {
+    font-size: 1.5rem;
+  }
+  .presentation .explication4 p {
+    font-size: 1.5rem;
+  }
 
   /************************************* PROJET 2 ***************************************/
 
+  .presentation .img1projet video {
+    pointer-events: none;
+    width: 100%;
+  }
+  .presentation .img2 video {
+    pointer-events: none;
+    width: 100%;
+  }
 
+  /************************************* PROJET 3 ***************************************/
 
+  .img4 img {
+    width: 100%;
+  }
 
+  .img5 video {
+    width: 100%;
+  }
 
-      .presentation .img1projet video {
-        pointer-events: none;
-        width: 100%;
-      }
-      .presentation .img2 video {
-        pointer-events: none;
-        width: 100%;
-      }
+  .section-simondousset .scroller {
+    width: 7em;
+  }
 
+  .section-footer {
+    flex-direction: column;
+    text-align: center;
+  }
 
+  /************************************* PROJET 5 ***************************************/
 
+  .section-project5 .titleizidesign h3 {
+    font-size: 3.5em;
+    text-align: center;
+  }
 
+  .section-project5 .imgizidesign img {
+    width: 100%;
+  }
 
+  /************************************* PROJET 6 ***************************************/
 
+  .section-project6 .imgresults img {
+    width: 100%;
+  }
 
-        /************************************* PROJET 3 ***************************************/
-
-
-
-
-
-
-
-
-
-      .img4 img {
-        width: 100%;
-      }
-
-
-      .img5 video {
-        width: 100%;
-      }
-
-
-
-      .section-simondousset .scroller {
-        width: 7em;
-      }
-
-
-      .section-footer {
-        flex-direction: column;
-        text-align: center;
-      }
+  .section-project6 .titleresults h3 {
+    font-size: 3.5em;
+  }
 }
 
-
-
-
+/************************************* 1820px responsive ***************************************/
 
 @media screen and (min-width: 1820px) {
   .section-title .inlineblock {

@@ -13,7 +13,8 @@
   src: url("fonts/Swis721_Cn_BT_Roman.woff2") format("woff2");
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -33,21 +34,23 @@ html, body {
           transform: translate(-50%, -50%);
   z-index: 0;
   mix-blend-mode: difference;
-  -webkit-transition: -webkit-transform .2s;
-  transition: -webkit-transform .2s;
-  transition: transform .2s;
-  transition: transform .2s, -webkit-transform .2s;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 * {
-  color: #4148FF;
+  color: #4148ff;
 }
 
 a {
   text-decoration: none;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   display: block;
   font-size: 1em;
   -webkit-margin-before: 0;
@@ -96,13 +99,13 @@ li {
 }
 
 .section-header .simondousset h1 {
-  font-family: 'Swis721BT';
+  font-family: "Swis721BT";
   font-size: 1.3rem;
   color: #fff;
 }
 
 .section-header .about a {
-  font-family: 'Swis721BT';
+  font-family: "Swis721BT";
   font-size: 1.3rem;
   color: #fff;
 }
@@ -149,7 +152,7 @@ li {
 .section-title .explicationme .frontend h2 {
   color: #003cff;
   font-size: 6rem;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
   background-image: url(img/fonddesign.jpg);
   background-attachment: fixed;
   -webkit-text-fill-color: transparent;
@@ -157,7 +160,7 @@ li {
 }
 
 .section-title .explicationme .title {
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
   color: #fff;
   font-size: 6rem;
 }
@@ -268,7 +271,7 @@ li {
 
 .section-welcome .sentence .inlineblock h2 {
   color: #003cff;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
   font-size: 7rem;
   background-image: url(img/fonddesign.jpg);
   background-attachment: fixed;
@@ -277,7 +280,7 @@ li {
 }
 
 .section-welcome .sentence .inlineblock li {
-  font-family: 'Swis721BT';
+  font-family: "Swis721BT";
   color: #fff;
   font-size: 2rem;
   list-style: none;
@@ -315,7 +318,7 @@ li {
   margin-top: 0.5em;
   color: #003cff;
   font-size: 8rem;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
   display: block;
   color: transparent;
   -webkit-background-clip: text;
@@ -359,7 +362,7 @@ li {
   margin-top: 0.5em;
   color: #003cff;
   font-size: 8rem;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
   display: block;
   color: transparent;
   -webkit-background-clip: text;
@@ -403,7 +406,7 @@ li {
   margin-top: 0.5em;
   color: #003cff;
   font-size: 8rem;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
   display: block;
   color: transparent;
   -webkit-background-clip: text;
@@ -452,7 +455,7 @@ li {
   margin-top: 1em;
   color: #003cff;
   font-size: 8rem;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
   display: block;
   color: transparent;
   -webkit-background-clip: text;
@@ -472,7 +475,7 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 200px 26px 0px;
+  margin: 175px 26px 0px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -482,25 +485,26 @@ li {
           align-items: center;
 }
 
-.section-project5 .imgresults {
+.section-project5 .imgizidesign {
   text-align: center;
 }
 
-.section-project5 .imgresults img {
-  width: 50%;
+.section-project5 .imgizidesign img {
+  pointer-events: none;
+  width: 60%;
 }
 
-.section-project5 .titleresults {
+.section-project5 .titleizidesign {
   margin-top: 4em;
   mix-blend-mode: difference;
   position: absolute;
 }
 
-.section-project5 .titleresults h3 {
-  margin-top: 0.5em;
+.section-project5 .titleizidesign h3 {
+  margin-top: 1em;
   color: #003cff;
   font-size: 8rem;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
   display: block;
   color: transparent;
   -webkit-background-clip: text;
@@ -512,7 +516,55 @@ li {
   transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
 }
 
-.section-project5 .titleresults h3:hover {
+.section-project5 .titleizidesign h3:hover {
+  background-position: 100%;
+}
+
+.section-project6 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 200px 26px 0px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-project6 .imgresults {
+  text-align: center;
+}
+
+.section-project6 .imgresults img {
+  width: 50%;
+}
+
+.section-project6 .titleresults {
+  margin-top: 4em;
+  mix-blend-mode: difference;
+  position: absolute;
+}
+
+.section-project6 .titleresults h3 {
+  margin-top: 0.5em;
+  color: #003cff;
+  font-size: 8rem;
+  font-family: "MonumentExtendedUltrabold";
+  display: block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: -webkit-gradient(linear, left top, right top, from(#fff), color-stop(50%, #fff), color-stop(0, #003cff));
+  background-image: linear-gradient(90deg, #fff, #fff 50%, #003cff 0);
+  background-size: 200% 100%;
+  background-position: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+  transition: all 0.3s cubic-bezier(0, 0, 0.23, 1);
+}
+
+.section-project6 .titleresults h3:hover {
   background-position: 100%;
 }
 
@@ -534,7 +586,7 @@ li {
 .presentation .title1project h2 {
   color: #003cff;
   font-size: 6rem;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
 }
 
 .presentation .img1projet {
@@ -555,7 +607,7 @@ li {
 }
 
 .presentation .explication1 p {
-  font-family: 'Swis721BT';
+  font-family: "Swis721BT";
   color: #fff;
   font-size: 2rem;
 }
@@ -564,7 +616,7 @@ li {
   margin-top: 3em;
   color: #003cff;
   font-size: 3rem;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
 }
 
 .presentation .explication2 {
@@ -572,7 +624,7 @@ li {
 }
 
 .presentation .explication2 p {
-  font-family: 'Swis721BT';
+  font-family: "Swis721BT";
   color: #fff;
   font-size: 2rem;
 }
@@ -594,7 +646,7 @@ li {
   margin-top: 3em;
   color: #003cff;
   font-size: 3rem;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
 }
 
 .presentation .explication3 {
@@ -602,7 +654,7 @@ li {
 }
 
 .presentation .explication3 p {
-  font-family: 'Swis721BT';
+  font-family: "Swis721BT";
   color: #fff;
   font-size: 2rem;
 }
@@ -611,7 +663,7 @@ li {
   margin-top: 3em;
   color: #003cff;
   font-size: 3rem;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
 }
 
 .presentation .explication4 {
@@ -619,7 +671,7 @@ li {
 }
 
 .presentation .explication4 p {
-  font-family: 'Swis721BT';
+  font-family: "Swis721BT";
   color: #fff;
   font-size: 2rem;
 }
@@ -637,7 +689,7 @@ li {
   margin-top: 3em;
   color: #003cff;
   font-size: 3rem;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
 }
 
 .presentation .img4 {
@@ -670,7 +722,7 @@ li {
 .section-simondousset .scrollingtext h2 {
   color: #fff;
   font-size: 3rem;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
 }
 
 .section-simondousset .scroller {
@@ -739,7 +791,7 @@ li {
 .section-me .text1 p {
   color: #fff;
   font-size: 2rem;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
 }
 
 .section-me .text2 {
@@ -749,7 +801,7 @@ li {
 .section-me .text2 p {
   color: #fff;
   font-size: 2rem;
-  font-family: 'MonumentExtendedUltrabold';
+  font-family: "MonumentExtendedUltrabold";
 }
 
 .section-me span {
@@ -775,7 +827,7 @@ li {
 .section-footer .mailadresse a {
   color: #fff;
   font-size: 1.2rem;
-  font-family: 'Swis721BT';
+  font-family: "Swis721BT";
 }
 
 .section-footer .linkedin {
@@ -785,7 +837,7 @@ li {
 .section-footer .linkedin a {
   color: #fff;
   font-size: 1.2rem;
-  font-family: 'Swis721BT';
+  font-family: "Swis721BT";
 }
 
 .section-footer .instagram {
@@ -795,7 +847,7 @@ li {
 .section-footer .instagram a {
   color: #fff;
   font-size: 1.2rem;
-  font-family: 'Swis721BT';
+  font-family: "Swis721BT";
 }
 
 .section-footer .behance {
@@ -806,7 +858,7 @@ li {
 .section-footer .behance a {
   color: #fff;
   font-size: 1.2rem;
-  font-family: 'Swis721BT';
+  font-family: "Swis721BT";
 }
 
 .section-footer .instagram a:hover {
@@ -964,8 +1016,24 @@ li {
             flex-direction: column;
     text-align: center;
   }
+  /************************************* PROJET 5 ***************************************/
+  .section-project5 .titleizidesign h3 {
+    font-size: 3.5em;
+    text-align: center;
+  }
+  .section-project5 .imgizidesign img {
+    width: 100%;
+  }
+  /************************************* PROJET 6 ***************************************/
+  .section-project6 .imgresults img {
+    width: 100%;
+  }
+  .section-project6 .titleresults h3 {
+    font-size: 3.5em;
+  }
 }
 
+/************************************* 1820px responsive ***************************************/
 @media screen and (min-width: 1820px) {
   .section-title .inlineblock {
     gap: 14em;
